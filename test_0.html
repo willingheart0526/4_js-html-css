@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <!-- .(名稱)：包裝宣告 -->
+    <style type="text/css">
+        /* <!-- font-weight：設定字體粗細，font-size：設定字體大小 --> */
+        .title0{font-weight:bold;font-size:40px;}
+
+        /* <!-- margin-top／bottom：設定文句與上／下其他文句的距離 --> */
+        .content1{border:1px solid blue;margin-top:10px;margin-bottom: 10px}
+
+        /* <!-- border：設定邊框（粗細 邊框樣式 顏色） --> */
+        .content2{border:1px dashed blue;margin-top:10px;margin-bottom: 10px}
+
+        /* <!-- padding：設定文句與邊框的距離 --> */
+        .content3{padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom: 10px}
+        
+        /* <!-- width／hieght：設定該文句長度／高度 --> */
+        .content4{width:400px;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom: 10px}
+        
+        /* <!-- color：設定顏色 --> */
+        .keyword{color:red}
+
+        /* <!-- position：絕對定位(absolute)/距離左;右;上;下方位置(left;right;top;bottom)
+                position：相對定位(relative)/距離左;右;上;下方位置(left;right;top;bottom)
+         --> */
+        .box1
+        {
+            position: absolute;right: 10px;bottom: 10px;
+            width: 100px;height: 100px;background-color:green
+        }
+        .box2
+        {
+            position: absolute;left: 900px;top: 10px;
+            width: 100px;height: 100px;background-color:red
+        }
+        .box3
+        {
+            position: relative;left: 2px;bottom: 10px;color:yellow;background-color:black
+        }
+    </style>
+</head>
+<body>
+    <!-- class：選擇器，呼叫包裝宣告 -->
+    <div class="title0">今天天氣不錯呦</div>
+
+    <div class="content1">
+        我去公園散步，餵<span class="keyword">鴿子 </span>。
+    </div>
+
+    <div class="content2">
+        我去公園散步，餵<span class="keyword">鴿子 </span>。
+    </div>
+
+    <div class="content3">
+        我去公園散步，餵<span class="keyword">鴿子 </span>。
+    </div>
+
+    <div class="content4">
+        我去公園散步，餵<span class="keyword">鴿子 </span>。<br/>
+        覺得<span class="keyword">鴿子</span>好可愛ㄛ
+    </div>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="content1">
+        還有幾位老公公<span class=box3>2</span>在聊天
+    </div>
+</body>
+</html>
