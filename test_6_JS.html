@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/JavaScript">
+/* 變數/運算/判斷式/迴圈 */
+/*  
+        var m=prompt("請輸入提款金額","");
+        if (m > 20000) 
+        {
+            alert("一次不可領超過兩萬元");
+        }
+        else if(m<=0)
+        {
+            alert("請輸入金額");
+        }
+        else
+        {
+            alert("已提款成功，請確定金額："+m);
+        }
+
+        var n=prompt("請輸入數字","");
+        
+        if(n>500)
+        {
+            alert(n+">500");
+        }
+        else if(n>300)
+        {
+            alert(n+">300");
+        }
+        else
+        {
+            alert(n+"<=300");
+        }
+
+        var n1=prompt("請輸入數字", "");
+        var n2=prompt("請輸入數字", "");
+        n1=Number(n1);
+        n2=Number(n2);
+        var op=prompt("請輸入運算符號：+,-,*,/", "");
+        var result;
+        if(op=='+')
+        {
+            result=n1+n2;
+        }
+        else if(op=='-')
+        {
+            result=n1-n2;
+        }
+        else if(op=='*')
+        {
+            result=n1*n2;
+        }
+        else if(op=='/')
+        {
+            result=n1/n2;
+        }
+        else
+        {
+            alert("enter wrong");
+        }
+        alert(result);
+
+        var sum=0;
+        var i=1;
+
+        while(i<=100)
+        {
+            sum+=i;
+            i++;
+        }
+        alert(sum);
+
+        for(j=1;j<=100;j++)
+        {
+            sum+=j;
+        }
+        alert(sum);
+
+        var k=0;
+        while(k<=100)
+        {
+            if(k==50)
+            {
+                break;
+            }
+            k++;
+        }
+        alert(k);
+
+        var l=0;
+        for(o=0;o<=100;o++)
+        {
+            if(o%4==0)
+            {
+                continue;
+            }
+            l++;
+        }
+        alert(l);
+        alert(o);
+*/
+
+
+/* 函式 */
+/*
+        function add(n1,n2) 
+        {
+            alert(n1+n2);    
+        }
+        add(36,73);
+        var add=function(n1,n2)
+        {
+            alert(n1+n2);
+        };
+        add(36,73);
+        var test=add;
+        test(36,72);
+
+        var x=3;
+        x="String";
+        x=function(){alert("Hello World");};
+        x();
+*/
+        /* 利用函式創造新的名稱空間 */
+/*
+        var x=3;    //全域空間→全域變數
+        function test() //區域空間→區域變數
+        {
+            var x=6
+            var y=7
+            alert(x+y);
+        }
+        test();
+        alert (x);
+*/
+
+
+/*物件*/
+/*
+        //建立空白物件
+        var point=new Object();
+        //建立物件的成員(屬性和方法)
+        point.x=6;  //屬性
+        point.y=11;
+        point.getPosition=function()    //方法
+        {
+            alert(this.x+","+this.y);
+        };
+        //使用物件
+        point.getPosition();
+
+        //綜合例子:遊戲裡的玩家簡易設計
+        var player=new Object ();
+        player.name="Frank";
+        player.hp=100;
+        player.fight=function()
+        {
+            this.hp=this.hp-2;
+        };
+        player.rest=function()
+        {
+            this.hp++;
+        };
+        player.report=function()
+        {
+            alert(this.name+"："+this.hp);
+        };
+        player.fight();
+        player.rest();
+        player.report();
+*/
+        /* 建構式 */
+/*
+        function Player(name,hp) //建構物件的函式
+        {   //this 表示新建的空白物件
+            this.name=name;
+            this.hp=hp;
+            this.fight=function()
+            {
+                this.hp-=2
+            };
+            this.rest=function()
+            {
+                this.hp++;
+            };
+            this.report=function()
+            {
+                alert(this.name+"："+this.hp);
+            };
+        }
+        var player=new Player("Frank",100);
+        player.fight();
+        player.report();
+        var player2=new Player("Rober",500);
+        player2.fight();
+        player2.rest();
+        player2.report();
+*/
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
