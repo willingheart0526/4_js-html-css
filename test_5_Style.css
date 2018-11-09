@@ -1,0 +1,56 @@
+body{margin: 0px}
+/* nav設定 */
+nav
+{
+    display: flex;
+}
+nav>.logo
+{
+    flex:auto;
+    text-align:center;
+    background-color: pink;
+}
+nav>.menu
+{
+    flex:auto;
+    text-align:center;
+    background-color:lightblue;
+}
+nav>.user
+{
+    flex:auto;
+    text-align:center;
+    background-color:lightgreen;
+}
+
+/* mian設定 */
+main
+{   /* 容器 */
+    display:flex;flex-wrap:wrap;
+    justify-content:center; /* 調整「水平對齊」靠左、置中、靠右、平均分配(起始最左結束最右)、間距平均分配(起始不靠左結束不靠右)，flex-start、center、flex-end、space-between、space-around*/
+    align-items:stretch; /* 調整「垂直對齊」靠上、置中、靠下、預設值、所有內容元素的基線為標準，flex-start、center、flex-end、stretch、baseline*/
+    background-color:#cccccc;
+}
+main>.item
+{
+    /* 項目 */
+    flex:none;
+    width:270px;margin:10px;
+    background-color:pink;
+}
+
+@media (max-width:1200px)
+{
+    main>.item
+    {
+        width: 45%;
+    }
+}
+
+@media (max-width:500px)
+{
+    main>.item
+    {
+        width: 90%;
+    }
+}
