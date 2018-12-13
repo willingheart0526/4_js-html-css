@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+
+        .box1
+        {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+
+            float: left;
+
+            /*
+            padding: 5px;
+            border: 5px solid pink;
+            margin: 5px;
+            box-sizing: border-box;
+            */
+
+            /*
+            transition-property: width;
+            transition-duration: 0.65s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.25s;
+            */
+
+            transition: width 2s, height 2s, background-color 2s, font-size 2s, color 2s;
+        }
+
+        .box1:hover
+        {
+            width: 600px;
+            height: 600px;
+            background-color: red;
+            color:white;
+            font-size: 50px;
+        }
+
+        @keyframes myAnimation
+        {
+            /*
+            from {width: 500px;}
+            to{width: 200px;}
+            */
+
+            0%
+            {
+                width: 200px;
+                background-color: red;
+            }
+            25%
+            {
+                width: 500px;
+                background-color: tomato;
+            }
+            75%
+            {
+                width: 50px;
+                background-color: yellowgreen;
+            }
+            100%
+            {
+                width: 200px;
+                background-color: green;
+            }
+        }
+
+        .box2
+        {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            margin: auto;
+
+            overflow: auto;
+            float: left;
+            clear: left;
+
+            animation-name: myAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .img-container
+        {
+            max-width: 33.33%;
+            float: left;
+            padding:5px;
+
+            box-sizing: border-box;
+
+            overflow: auto;
+            height: 150px;
+        }
+
+        .clearfix
+        {
+            clear:both;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Example Domain</h1>
+
+        <div class="box1">
+
+            <h1>Title</h1>
+
+        </div>
+        <div class="box2">
+
+            <h1>Title2</h1>
+
+        </div>
+
+        <div class="clearfix">
+
+            <div class="img-container">
+                <img src="img/1.jpg" alt="First image" style="width: 100%;">
+            </div>
+                
+            <div class="img-container">
+                <img src="img/2.jpg" alt="Second image" style="width: 100%;">
+            </div>
+
+            <div class="img-container">
+                <img src="img/3.jpg" alt="Third image" style="width: 100%;">
+            </div>
+
+        </div>
+
+        <div style="padding-bottom: 2000px;"></div>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+        
+    </div>
+
+</body>
+
+</html>

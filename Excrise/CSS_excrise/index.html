@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+
+        /*
+        body
+        {
+
+            background: url(img/Taiwan_Flag.png) repeat-y right top;
+            background-size: 100%;
+            
+        }
+        */
+
+        h1, p
+        {
+            color: black;
+        }
+    
+        h1 
+        {
+            background-color: rgba(75, 223, 149, 0.8);
+            text-shadow: black 0.1em 0.1em 0.2em;
+            letter-spacing: 2px;
+            word-spacing:10px;
+        }
+
+        p
+        {
+            /*background-color: tomato;*/
+            max-width: 200px;
+            text-align: justify;
+            line-height: 1;
+        }
+        
+        section
+        {
+            background-color: orange;
+
+            /*height: 300px;*/
+        }
+
+        .myBorder1
+        {
+            /*
+            border-style: solid;
+            border-color: tomato;
+            border-width: 5px 10px;
+            */
+            /* 順時針，4個--上&右&下&左；3個--上&右左&下；2個--上下&右左；1個--All*/
+            
+            border:5px solid tomato;
+            border-radius: 150px;
+
+            /*border: 50px;*/
+            /* 順時針，4個--上&右&下&左；3個--上&右左&下；2個--上下&右左；1個--All*/
+            
+        }
+
+        
+        .myBorder2
+        {
+            border:5px solid;
+            border-radius: 125px;
+            margin:100px 0px tomato;
+            /* 順時針，4個--上&右&下&左；3個--上&右左&下；2個--上下&右左；1個--All*/
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        
+        .align
+        {
+            text-align: center;
+        }
+
+        a
+        {
+            text-decoration: none;
+        }
+
+        .decoration
+        {
+            text-decoration: underline;
+        }
+
+        .redcolor
+        {
+            background-color: tomato;
+        }
+
+        .myPostion
+        {
+            position: absolute;
+            top: 500px;
+            left: 10px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Example Domain</h1>
+        <p>This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission.</p>
+        
+        <section class="myBorder1 redcolor myPostion">
+            <p class="align">That is a text.</p>
+        </section>
+        <section class="myBorder2 decoration">
+            <p class="align">That is a text2.</p>
+        </section>
+
+        <div style="padding-bottom: 2000px;"></div>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+        
+    </div>
+
+</body>
+
+</html>
